@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="\static\css\bulma\css\bulma.min.css">
+</head>
+<body>
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="http://127.0.0.1:5000/todo">
+                <span class="icon-text">
+                    <span class="icon">
+                      <i class="fas fa-home"></i>
+                    </span>
+                    <span>Login</span>
+                  </span>
+            </a>
+          
+        </div>
+      </nav>
+
+      <br><br><br>
+      <section>
+        <div class="container is-max-tablet">
+        <form method="POST" action="/todo">
+            <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input class="input" name="username" type="email" placeholder="Email">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input class="input" name="password" type="password" placeholder="Password">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control">
+                  <button class="button is-success">
+                    Login
+                  </button>
+                </p>
+              </div>
+        </form>
+        </div>
+      </section>
+</body>
+</html>
